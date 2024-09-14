@@ -1,0 +1,22 @@
+{
+    "name": "I10nKit",
+    "rootNamespace": "",
+    "references": [
+        "QFramework.CoreKit",
+        "QFramework",
+        "I2.Core",
+        "Unity.TextMeshPro",
+        "ResKit"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "ENBALE_I2"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
