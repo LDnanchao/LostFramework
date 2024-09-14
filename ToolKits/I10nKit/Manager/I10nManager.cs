@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
-namespace QFramework
+namespace LostFramework
 {
     internal class I10nManager:Singleton<I10nManager>
     {

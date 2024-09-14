@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QFramework
+namespace LostFramework
 {
     internal class GlobalParamManager: ILocalizationParamsManager
     {

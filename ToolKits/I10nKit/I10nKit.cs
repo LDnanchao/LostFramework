@@ -5,10 +5,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using static I2.Loc.LocalizationManager;
 
-namespace QFramework
+namespace LostFramework
 {
     /// <summary>
-    /// ¶ÔÓÚI2,²»ÊÊÓÃÆä²ÎÊı¹¤¾ß£¬»áÔÚI2µÄ»ù´¡ÉÏ½øĞĞÀ©Õ¹
+    /// å¯¹äºI2,ä¸é€‚ç”¨å…¶å‚æ•°å·¥å…·ï¼Œä¼šåœ¨I2çš„åŸºç¡€ä¸Šè¿›è¡Œæ‰©å±•
     /// </summary>
     public class I10nKit
     {
@@ -33,9 +33,9 @@ namespace QFramework
             I10nManager.Instance.SetLanguage(languageCode);
         }
         /// <summary>
-        /// ÉèÖÃÓïÑÔÔ´£¬Ê¹ÓÃÔ¤ÖÆÌåµÄ·½Ê½ÖÆ×÷
-        /// ²Î¿¼£ºhttp://www.inter-illusion.com/assets/I2LocalizationManual/HowtouseAssetBundles.html
-        /// ½«³¡¾°µÄlanguageSourceÖÆ×÷³ÉÔ¤ÖÆÌå£¬Ê¹ÓÃ×ÊÔ´¼ÓÔØµÄ·½Ê½½øĞĞÌæ»»
+        /// è®¾ç½®è¯­è¨€æºï¼Œä½¿ç”¨é¢„åˆ¶ä½“çš„æ–¹å¼åˆ¶ä½œ
+        /// å‚è€ƒï¼šhttp://www.inter-illusion.com/assets/I2LocalizationManual/HowtouseAssetBundles.html
+        /// å°†åœºæ™¯çš„languageSourceåˆ¶ä½œæˆé¢„åˆ¶ä½“ï¼Œä½¿ç”¨èµ„æºåŠ è½½çš„æ–¹å¼è¿›è¡Œæ›¿æ¢
         /// </summary>
         /// <param name="assetName"></param>
         public static void SetLanguageSourceByAssetName(string assetName)

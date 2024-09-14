@@ -4,18 +4,22 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-public class I10nEditor : Editor
+namespace LostFramework
 {
-    [MenuItem("Tools/I2 Localization/SetChinese", false, 16)]
-    public static void SetChinese()
+    public class I10nEditor : Editor
     {
-        LocalizationManager.CurrentLanguageCode = "zh-CN";
-        LocalizationEditor.CallLocalizeAll();
+        [MenuItem("Tools/I2 Localization/SetChinese", false, 16)]
+        public static void SetChinese()
+        {
+            LocalizationManager.CurrentLanguageCode = "zh-CN";
+            LocalizationEditor.CallLocalizeAll();
+        }
+        [MenuItem("Tools/I2 Localization/SetEnglish", false, 16)]
+        public static void SetEnglish()
+        {
+            LocalizationManager.CurrentLanguageCode = "en";
+            LocalizationEditor.CallLocalizeAll();
+        }
     }
-    [MenuItem("Tools/I2 Localization/SetEnglish", false, 16)]
-    public static void SetEnglish()
-    {
-        LocalizationManager.CurrentLanguageCode = "en";
-        LocalizationEditor.CallLocalizeAll();
-    }
+
 }
