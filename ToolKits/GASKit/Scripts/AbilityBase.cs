@@ -10,7 +10,6 @@
     /// </summary>
     public abstract class AbilityBase
     {
-       
         private AbilitySystemComponent owner;
         protected AbilitySystemComponent Owner => owner;
         protected bool isActive = false;

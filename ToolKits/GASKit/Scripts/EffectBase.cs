@@ -11,6 +11,10 @@
         {
             
         }
-        
+
+        public void UpdateEffect()
+        {
+            
+        }
     }
 }

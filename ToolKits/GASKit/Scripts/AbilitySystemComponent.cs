@@ -5,7 +5,7 @@ using UnityEngine;
 namespace LostFrameWork.GAS
 {
     /// <summary>
-    /// 技能系统基本组件，技能的释放和执行必须依靠该系统
+    /// 技能系统基本组件，技能的释放和执行必须依靠该系统，需要增加编辑器支持
     /// </summary>
     public class AbilitySystemComponent:MonoBehaviour
     {
@@ -75,7 +75,22 @@ namespace LostFrameWork.GAS
                 activeAbilies[i].ability.UpdateAbility();
             }
             //移除效果
+            if (removeEffects.Count > 0)
+            {
+                for (int i = 0; i < removeEffects.Count; i++)
+                {
+                    EffectHandle handle = removeEffects[i];
+                    handle.effect.Remove();
+                    _ownEffects.Remove(handle);
+                }
+                removeEffects.Clear();
+            }
             //刷新效果
+            //刷新激活的技能
+            for (int i = 0; i < _ownEffects.Count; i++)
+            {
+                _ownEffects[i].effect.UpdateEffect();
+            }
         }
     }
 }

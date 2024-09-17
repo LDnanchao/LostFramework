@@ -55,7 +55,6 @@ namespace LostFramework
             {
                 scale.x = -Math.Abs(scale.x);
             }
-
             transform.localScale = scale;
         }
 
