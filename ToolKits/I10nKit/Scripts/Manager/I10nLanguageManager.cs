@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 
-namespace LostFramework
+namespace LostFramework.I10nKit
 {
     internal class I10nLanguageManager
     {

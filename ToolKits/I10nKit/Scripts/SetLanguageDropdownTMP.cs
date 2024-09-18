@@ -8,7 +8,7 @@ using UnityEngine.UI;
 using UnityEngine;
 using TMPro;
 
-namespace LostFramework
+namespace LostFramework.I10nKit
 {
     [AddComponentMenu("I2/Localization/SetLanguageDropdownTMP")]
     public class SetLanguageDropdownTMP : MonoBehaviour

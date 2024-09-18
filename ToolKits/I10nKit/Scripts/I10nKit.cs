@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using static I2.Loc.LocalizationManager;
 
-namespace LostFramework
+namespace LostFramework.I10nKit
 {
     /// <summary>
     /// 对于I2,不适用其参数工具，会在I2的基础上进行扩展

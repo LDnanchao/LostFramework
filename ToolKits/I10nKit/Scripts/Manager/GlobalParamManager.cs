@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LostFramework
+namespace LostFramework.I10nKit
 {
     internal class GlobalParamManager: ILocalizationParamsManager
     {

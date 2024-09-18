@@ -1,7 +1,7 @@
 ﻿using I2.Loc;
 using TMPro;
 
-namespace QFramework
+namespace LostFramework.I10nKit
 {
     public static class I10nKitHelp
     {

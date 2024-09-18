@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-namespace LostFramework
+namespace LostFramework.I10nKit.Editor
 {
     public class I10nEditor : Editor
     {

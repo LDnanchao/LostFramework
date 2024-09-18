@@ -1,7 +1,7 @@
 ﻿using QFramework;
 using UnityEngine;
 
-namespace LostFrameWork
+namespace LostFrameWork.GAS
 {
     /// <summary>
     /// 基础属性
