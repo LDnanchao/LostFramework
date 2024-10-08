@@ -30,8 +30,18 @@ namespace LostFramework
             
         }
 
-        public void Move(Vector3 inputAxis)
+        public void Move(Vector3 inputAxis,Space space = Space.World)
         {
+            
+            switch (space)
+            {
+                case Space.Self:
+                    inputAxis = transform.TransformDirection(inputAxis);
+                    break;
+                case Space.World:
+                    inputAxis = inputAxis;
+                    break;
+            }
             _rigidbody2D.velocity = inputAxis;
             if (inputAxis.x > 0)
             {
