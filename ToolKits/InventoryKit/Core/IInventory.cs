@@ -96,8 +96,8 @@ namespace LostFramework
         /// <param name="searchedClass"></param>
         /// <returns></returns>
         public List<int> InventoryContains(ItemClasses searchedClass);
-  
-  
+
+
 
     }
 }

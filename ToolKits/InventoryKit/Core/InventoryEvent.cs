@@ -1,6 +1,30 @@
 ﻿namespace LostFramework
 {
-    public enum InventoryEventType { Pick, Select, Click, Move, UseRequest, ItemUsed, EquipRequest, ItemEquipped, UnEquipRequest, ItemUnEquipped, Drop, Destroy, Error, Redraw, ContentChanged, InventoryOpens, InventoryCloseRequest, InventoryCloses, InventoryLoaded }
+    public enum InventoryEventType
+    {
+        Pick, 
+        Select, 
+        Click, 
+        Move, 
+        UseRequest, 
+        ItemUsed, 
+        EquipRequest, 
+        ItemEquipped, 
+        UnEquipRequest, 
+        ItemUnEquipped, 
+        Drop, 
+        Destroy, 
+        Error, 
+        Redraw, 
+        /// <summary>
+        /// 内容变化
+        /// </summary>
+        ContentChanged, 
+        InventoryOpens, 
+        InventoryCloseRequest, 
+        InventoryCloses, 
+        InventoryLoaded
+    }
     public struct InventoryEvent
     {
         /// the type of event
