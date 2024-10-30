@@ -4,19 +4,18 @@ namespace LostFramework
 {
     public interface IInventory
     {
+        /// <summary>
+        /// 库存拥有者，可以通过id和name进行定位
+        /// </summary>
+        public string PlayerID { get; set; }
+        /// <summary>
+        /// 库存名称，可以通过id和name进行定位
+        /// </summary>
+        public string InventoryName{ get; set; }
         ///是否允许自动移除空位
-        public bool IsAutoRemoveEmpty();
-        /// <summary>
-        /// 设置是否为自动移除空位
-        /// </summary>
-        /// <param name="autoRemove"></param>
-        public void SetAutoRemoveEmpty(bool autoRemove);
+        public bool AutoRemoveEmpty { get; set; }
         ///是否为无限制空间
-        public bool IsUnlimited();
-        /// <summary>
-        /// 设置是否为无限制空间
-        /// </summary>
-        public void SetUnlimited(bool unlimited);
+        public bool Unlimited { get; set; }
         /// <summary>
         /// 添加道具
         /// </summary>
@@ -97,6 +96,7 @@ namespace LostFramework
         /// <param name="searchedClass"></param>
         /// <returns></returns>
         public List<int> InventoryContains(ItemClasses searchedClass);
+  
   
 
     }

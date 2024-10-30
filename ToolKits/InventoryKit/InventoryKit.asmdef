@@ -1,3 +1,4 @@
 {
-	"name": "InventoryKit"
+	"name": "InventoryKit",
+	"references":[ "GUID:204ed506d63b10044a13bf6ad4dda2f7" ]
 }

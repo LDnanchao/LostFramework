@@ -5,37 +5,18 @@ namespace LostFramework
     //需要支持事件
     public class Inventory:IInventory
     {
-        private bool _isUnlimited;
-        private bool _autoRemoveEmpty;
+        public string PlayerID { get; set; }
+        public string InventoryName { get; set; }
+        public bool AutoRemoveEmpty { get; set; }
+        public bool Unlimited { get; set; }
+        
+
         private List<InventoryItem> _inventoryItems;
-        public bool IsAutoRemoveEmpty()
-        {
-            return  _autoRemoveEmpty;
-        }
 
-        public void SetAutoRemoveEmpty(bool autoRemove)
-        {
-            _autoRemoveEmpty = autoRemove;
-        }
-
-        public bool IsUnlimited()
-        {
-            return  _isUnlimited;
-        }
-
-        public void SetUnlimited(bool unlimited)
-        {
-            _isUnlimited = unlimited;
-        }
 
         public bool AddItem(InventoryItem itemToAdd, int quantity)
         {
-            if (itemToAdd == null)
-                return false;
-            List<int> list = InventoryContains(itemToAdd.ItemID);
- 
-            
-            return  false;
+            throw new System.NotImplementedException();
         }
 
         public bool AddItemAt(InventoryItem itemToAdd, int quantity, int destinationIndex)

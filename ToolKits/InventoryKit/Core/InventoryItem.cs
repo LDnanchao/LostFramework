@@ -10,5 +10,12 @@ namespace LostFramework
         public int MaxQuantity;
         //当前数量
         public int Quantity;
+        
+        public InventoryItem(){}
+        public  InventoryItem(string itemID, int maxQuantity)
+        {
+            ItemID = itemID;
+            MaxQuantity = maxQuantity;
+        }
     }
 }

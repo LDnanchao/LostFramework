@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace LostFramework
 {
-    public class InventoryDisplay:MonoBehaviour,IInventoryDisplay
+    public class InventoryDisplay:MonoBehaviour,IInventoryDisplay,ILEventListener<InventoryEvent>
     {
         public IInventory inventory;
         public List<InventorySlot> SlotContainer { get;protected set; }
@@ -15,6 +15,20 @@ namespace LostFramework
             {
                 UpdateInventory();
             }
+        }
+        
+        public void OnMMEvent(InventoryEvent eventType)
+        {
+	        throw new NotImplementedException();
+        }
+        private void OnEnable()
+        {
+	        this.LEventStartListening();
+        }
+
+        private void OnDisable()
+        {
+	        this.LEventStopListening();
         }
 
         private void UpdateInventory()
@@ -69,5 +83,7 @@ namespace LostFramework
 		{
 			throw  new NotImplementedException();
 		}
+
+		
     }
 }
